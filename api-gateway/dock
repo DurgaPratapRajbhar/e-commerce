@@ -1,0 +1,44 @@
+api-gateway/internal/
+├── config/
+│   └── config.go
+│
+├── model/              # Service response models
+│   ├── auth_user.go
+│   ├── user_profile.go
+│   └── product.go
+│
+├── dto/                # API contracts
+│   ├── request/
+│   │   └── user_update.go
+│   └── response/
+│       ├── user_profile.go
+│       └── admin_dashboard.go
+│
+├── client/
+│   ├── auth_client.go
+│   ├── user_client.go
+│   └── product_client.go
+│
+├── service/
+│   └── aggregator/
+│       ├── user_aggregator.go
+│       └── admin_aggregator.go
+│
+├── handler/
+│   ├── user.go
+│   └── admin.go
+│
+├── middleware/
+│   ├── auth.go
+│   ├── admin.go
+│   └── cors.go
+│
+├── proxy/
+│   └── reverse_proxy.go
+│
+├── errors/
+│   ├── errors.go
+│   └── handler.go
+│
+└── router/
+    └── router.go

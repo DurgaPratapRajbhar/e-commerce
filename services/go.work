@@ -1,0 +1,13 @@
+go 1.24.1
+
+use (
+	./auth-service
+	./cart-service
+	./inventory-service
+	./order-service
+	./payment-service
+	./pkg
+	./product-service
+	./shipping-service
+	./user-service
+)
